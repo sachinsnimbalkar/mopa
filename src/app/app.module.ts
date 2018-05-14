@@ -5,7 +5,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-
+import {LoginPage} from '../pages/login/login';
+import { AuthService } from '../providers/auth-service/auth-service';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SignupPage } from '../pages/signup/signup';
@@ -13,9 +14,9 @@ import { SignupPage } from '../pages/signup/signup';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
+    //HomePage,
     ListPage,
-    SignupPage
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -23,14 +24,15 @@ import { SignupPage } from '../pages/signup/signup';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,SignupPage
+    MyApp,LoginPage
     //HomePage,
     //ListPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    AuthService
   ]
 })
 export class AppModule {}

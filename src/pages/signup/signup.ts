@@ -16,7 +16,7 @@ import { IonicPage, NavController, NavParams,AlertController } from 'ionic-angul
 })
 export class SignupPage {
   data = { FirstName:'', LastName:'', Email:'', Address:'', MobileNumber:'' };
-  constructor(public navCtrl: NavController, public navParams: NavParams,public alertCtrl: AlertController) {
+  constructor(private nav: NavController, public navParams: NavParams,public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
@@ -32,5 +32,6 @@ export class SignupPage {
     });
     alert.present();
     this.data = { FirstName:'', LastName:'', Email:'', Address:'', MobileNumber:'' };
+    this.nav.push('LoginPage');
   }
 }
