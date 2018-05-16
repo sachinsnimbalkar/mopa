@@ -8,6 +8,9 @@ import { ListPage } from '../pages/list/list';
 import { SignupPage } from '../pages/signup/signup';
 import {LoginPage} from '../pages/login/login';
 import {FeedbackPage} from '../pages/feedback/feedback';
+import {DisclaimerPage} from '../pages/disclaimer/disclaimer'
+import {WalletPage} from '../pages/Wallet/wallet'
+import {OrderhistoryPage} from '../pages/orderhistory/orderhistory'
 
 @Component({
   templateUrl: 'app.html'
@@ -26,10 +29,11 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Offers', component: ListPage },
+      { title: 'Order History', component: OrderhistoryPage },
       { title: 'Map', component: ListPage },
       { title: 'Track Order', component: ListPage },
-      { title: 'Wallet', component: ListPage },
-      { title: 'T&C Disclaimer', component: ListPage },
+      { title: 'Wallet', component: WalletPage },
+      { title: 'T&C Disclaimer', component: DisclaimerPage },
       { title: 'Feedback', component: FeedbackPage },
       { title: 'Sign Out', component: ListPage },
       { title: 'Exit', component: ListPage }
