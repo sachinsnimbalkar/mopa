@@ -5,28 +5,53 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-import {LoginPage} from '../pages/login/login';
+import { LoginPage} from '../pages/login/login';
 import { AuthService } from '../providers/auth-service/auth-service';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SignupPage } from '../pages/signup/signup';
+import { TrackOrderPage } from '../pages/track-order/track-order';
+import { OrderHistoryPage } from '../pages/orderhistory/orderhistory';
+import { DisclaimerPage } from '../pages/disclaimer/disclaimer';
+import { FeedbackPage } from '../pages/feedback/feedback';
+import { WalletPage } from '../pages/wallet/wallet';
+import { ExitPage } from '../pages/exit/exit';
+import { OfferPage } from '../pages/offer/offer';
+import { AboutPage } from '../pages/about/about';
 
 @NgModule({
   declarations: [
     MyApp,
-    //HomePage,
+   AboutPage,
     ListPage,
-    LoginPage
+    LoginPage,
+    OfferPage,
+    OrderHistoryPage,
+    TrackOrderPage,
+    DisclaimerPage,
+    FeedbackPage,
+    WalletPage,
+    ExitPage,
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-  ],
+      ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,LoginPage
-    //HomePage,
-    //ListPage
+    MyApp,
+    LoginPage,
+    AboutPage,
+    ListPage,
+    OrderHistoryPage,
+    OfferPage,
+    TrackOrderPage,
+    DisclaimerPage,
+    FeedbackPage,
+   WalletPage,
+  // SignOutPage,
+   ExitPage,
+    
   ],
   providers: [
     StatusBar,
