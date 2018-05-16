@@ -10,12 +10,13 @@ import { AuthService } from '../providers/auth-service/auth-service';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SignupPage } from '../pages/signup/signup';
+import {FeedbackPage} from '../pages/feedback/feedback'
 
 @NgModule({
   declarations: [
     MyApp,
     //HomePage,
-    ListPage,
+   
     LoginPage
   ],
   imports: [
