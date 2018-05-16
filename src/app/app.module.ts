@@ -18,6 +18,8 @@ import { WalletPage } from '../pages/wallet/wallet';
 import { ExitPage } from '../pages/exit/exit';
 import { OfferPage } from '../pages/offer/offer';
 import { AboutPage } from '../pages/about/about';
+import { GetDataProvider } from '../providers/get-data/get-data';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,7 @@ import { AboutPage } from '../pages/about/about';
     ExitPage,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,HttpModule,
     IonicModule.forRoot(MyApp),
       ],
   bootstrap: [IonicApp],
@@ -57,7 +59,8 @@ import { AboutPage } from '../pages/about/about';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AuthService
+    AuthService,
+    GetDataProvider,
   ]
 })
 export class AppModule {}

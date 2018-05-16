@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage,NavController } from 'ionic-angular';
+import { GetDataProvider } from '../../providers/get-data/get-data';
 
 @IonicPage()
 @Component({
@@ -8,8 +9,11 @@ import { IonicPage,NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,public DataService:GetDataProvider) {
 
   }
-
+  ionViewDidLoad(){
+    this.DataService.getlocalData();
+  }
 }
+
