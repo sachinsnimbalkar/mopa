@@ -1,0 +1,26 @@
+[
+  {
+    "SrNo": 1,
+    "Category": "CUSTOMIZE YOUR PIZZA"
+  },
+  {
+    "SrNo": 2,
+    "Category": "SPECIALTY PIZZAS"
+  },
+  {
+    "SrNo": 3,
+    "Category": "SALADS"
+  },
+  {
+    "SrNo": 4,
+    "Category": "TRY OUR EXTRAS!"
+  },
+  {
+    "SrNo": 5,
+    "Category": "DESSERTS"
+  },
+  {
+    "SrNo": 6,
+    "Category": "DRINKS"
+  }
+]

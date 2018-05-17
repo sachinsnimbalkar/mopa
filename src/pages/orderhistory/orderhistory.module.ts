@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
+
 import { OrderhistoryPage } from './orderhistory';
 
 @NgModule({
@@ -11,3 +12,4 @@ import { OrderhistoryPage } from './orderhistory';
   ],
 })
 export class OrderhistoryPageModule {}
+
