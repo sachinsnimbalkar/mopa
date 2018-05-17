@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
-
- * Generated class for the OrderhistoryPage page.
+ * Generated class for the TrackOrderPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,18 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-orderhistory',
-  templateUrl: 'orderhistory.html',
+  selector: 'page-track-order',
+  templateUrl: 'track-order.html',
 })
-
-export class OrderhistoryPage {
+export class TrackOrderPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-
-    console.log('ionViewDidLoad OrderhistoryPage');
+    console.log('ionViewDidLoad TrackOrderPage');
   }
 
 }
