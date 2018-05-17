@@ -36,7 +36,6 @@ import {OrderhistoryPage} from '../pages/orderhistory/orderhistory'
     WalletPage,
    OrderhistoryPage,
     LoginPage,
-    
     //ListPage
   ],
   providers: [
