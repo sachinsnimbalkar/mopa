@@ -19,8 +19,10 @@ export class GetDataProvider {
   //   });
 
   getlocalData(){
-    this.http.get('/data/BJPProducts.json').map(res => res.json()).subscribe(data=>{
-        console.log(data);
-    });
+    // this.http.get('../assets/data/BJPProducts.json').map(res => res.json()).subscribe(data=>{
+    //     console.log(data);
+    // });
+    return this.http.get('../assets/data/BJPProducts.json')
+    .map(res => res.json());
 }
 }

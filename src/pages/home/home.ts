@@ -13,7 +13,10 @@ export class HomePage {
 
   }
   ionViewDidLoad(){
-    this.DataService.getlocalData();
+   // this.DataService.getlocalData();
+    this.DataService.getlocalData().subscribe(res => {
+      console.log(res);
+    });
   }
 }
 
