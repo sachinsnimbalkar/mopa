@@ -20,7 +20,6 @@ import { OfferPage } from '../pages/offer/offer';
 import { AboutPage } from '../pages/about/about';
 import { GetDataProvider } from '../providers/get-data/get-data';
 import { HttpModule } from '@angular/http';
-
 @NgModule({
   declarations: [
     MyApp,
@@ -34,6 +33,7 @@ import { HttpModule } from '@angular/http';
     FeedbackPage,
     WalletPage,
     ExitPage,
+
   ],
   imports: [
     BrowserModule,HttpModule,
@@ -51,9 +51,7 @@ import { HttpModule } from '@angular/http';
     DisclaimerPage,
     FeedbackPage,
    WalletPage,
-  // SignOutPage,
    ExitPage,
-    
   ],
   providers: [
     StatusBar,

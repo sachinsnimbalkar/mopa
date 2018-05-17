@@ -2,20 +2,19 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { SignupPage } from '../pages/signup/signup';
 import {LoginPage} from '../pages/login/login';
-import { OrderHistoryPage } from '../pages/orderhistory/orderhistory';
 import { TrackOrderPage } from '../pages/track-order/track-order';
-import { DisclaimerPage } from '../pages/disclaimer/disclaimer';
-import { FeedbackPage } from '../pages/feedback/feedback';
-import { WalletPage } from '../pages/wallet/wallet';
 import { SignOutPage } from '../pages/sign-out/sign-out';
 import { OfferPage } from '../pages/offer/offer';
 import { ExitPage } from '../pages/exit/exit';
 import { AboutPage } from '../pages/about/about';
+import {FeedbackPage} from '../pages/feedback/feedback';
+import {DisclaimerPage} from '../pages/disclaimer/disclaimer'
+import {WalletPage} from '../pages/Wallet/wallet'
+import {OrderhistoryPage} from '../pages/orderhistory/orderhistory'
 
 @Component({
   templateUrl: 'app.html'
@@ -42,9 +41,7 @@ export class MyApp {
       { title: 'SignOut', component: SignOutPage },
       { title: 'About', component: AboutPage },
       { title: 'Exit', component: ExitPage },
-
     ];
-
   }
 
   initializeApp() {

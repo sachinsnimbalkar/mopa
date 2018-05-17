@@ -10,7 +10,8 @@
       <button ion-button menuToggle>
           <ion-icon name="menu"></ion-icon>
         </button>
-    <ion-title>FeedbackPage</ion-title>
+
+    <ion-title>Feedback</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -18,4 +19,38 @@
 
 <ion-content padding>
 
+  <b>Please share your feedback with us. All fields marked with * are required.</b>
+  <!-- <div class = "tabs">
+    <a class = "tab-item">
+      Details
+    </a>
+   
+    <a class = "tab-item">
+       Feedback
+    </a>
+ </div> -->
+ <p>Please select the type of Feedback*</p>
+ <ion-list radio-group [(ngModel)]="relationship">
+    <ion-item>
+      <ion-label>Concern</ion-label>
+      <ion-radio value="Concern" checked></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Appreciation</ion-label>
+      <ion-radio value="Appreciation"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Suggestion</ion-label>
+      <ion-radio value="Suggestion" [disabled]="isDisabled"></ion-radio>
+    </ion-item>
+  </ion-list>
+  <p>Comments*</p>
+  <ion-list>
+      <ion-item>
+        <ion-textarea rows="6"></ion-textarea>
+      </ion-item>
+    </ion-list>
+    <ion-footer>
+        <button ion-button full type="Submit">Submit</button>
+      </ion-footer>
 </ion-content>
