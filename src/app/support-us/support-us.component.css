@@ -1,0 +1,17 @@
+.column{
+    background-color: rgba(191, 192, 189, 0.705);
+    color:white;
+  
+    float: left;
+    width: 25%;
+    height: 100px;
+    padding: 10px;
+    /* Should be removed. Only for demonstration */
+}
+.demo {
+    margin-left: 100px;
+}
+h3 {
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}

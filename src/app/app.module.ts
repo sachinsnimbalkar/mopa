@@ -4,7 +4,9 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { SliderModule } from 'angular-image-slider';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
+
+import { routes } from './app.routs';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { EventsComponent } from './events/events.component';
@@ -14,7 +16,7 @@ import { ShopComponent } from './shop/shop.component';
 import { MemberAreaComponent } from './member-area/member-area.component';
 import { FacilitiesComponent } from './facilities/facilities.component';
 import { AppRoutingModule } from './/app-routing.module';
-// import { AboutComponent } from './about/about.component';
+import { AboutComponent } from './about/about.component';
 
 // const appRoutes: Routes = [
 //   { path: 'About', component: AboutComponent },
@@ -30,15 +32,18 @@ import { AppRoutingModule } from './/app-routing.module';
     ShopComponent,
     MemberAreaComponent,
     FacilitiesComponent,
+    AboutComponent
     
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot(routes),
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
     SliderModule,
     AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

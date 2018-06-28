@@ -1,0 +1,10 @@
+.column3{
+    background-color:rgb(147, 206, 253);
+    color:white;
+    align: center;
+    float: left;
+    width: 25%;
+    height: 200px;
+    padding: 10px;
+    /* Should be removed. Only for demonstration */
+}

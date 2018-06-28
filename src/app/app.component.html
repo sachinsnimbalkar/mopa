@@ -24,16 +24,16 @@
     <div style="background-color: black;">
         <nav class="navbar navbar-expand-sm bg-light navbar-light"style="margin-left:100px;" >
         <ul class="nav navbar-nav" >
-            <li class=".active"><a href="#" >
-              Home <span class="sr-only">(.active)</span>
-            </a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="events/events.component.html">Events</a></li>
-            <li><a href="#">SupportUs</a></li>
-            <li><a href="#">Visit</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Facilities</a></li>
-            <li><a href="#">Member Area</a></li>
+          
+           <li ><a routerLink="/home">Home</a></li>
+           <li>  <a [routerLink]="['/about']">About</a></li>
+            <!-- <li> <a routerLink="/about">About</a></li> -->
+            <li><a routerLink="/events">Events</a></li>
+            <li><a routerLink="/support">SupportUs</a></li>
+            <li><a routerLink="/visit">Visit</a></li>
+            <li><a routerLink="/shop">Shop</a></li>
+            <li><a routerLink="/member">Member-Area</a></li>
+            <li><a routerLink="/facilities">Facilities</a></li>
           </ul>
           </nav>
         </div>
@@ -104,19 +104,15 @@ Button with tooltip
 </div>
 </div> -->
 
-<div class="row">
-    <div class="column left" style="background-color:	#f2f2f2; ">
-  <!-- <div class="container3" style="width:40%;height: 300px;"> -->
-    
+<!-- <div class="row">
+    <div class="column left" style="background-color:	#f2f2f2; ">    
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
   
-      <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
           <img src="../assets/IMAGE_URL1.jpg" alt="Los Angeles" style="height: 350px;">
@@ -131,7 +127,6 @@ Button with tooltip
         </div>
       </div>
   
-      <!-- Left and right controls -->
       <a class="left carousel-control" href="#myCarousel" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
         <span class="sr-only">Previous</span>
@@ -152,7 +147,6 @@ Button with tooltip
     <div class="card">
      
       <div class="fakeimg" >Write Something</div>
-      <!-- <p>Some text about me in culpa qui officia deserunt mollit anim..</p> -->
     </div>
     <div class="card">
       
@@ -161,8 +155,9 @@ Button with tooltip
     </div>
   </div>
 </div>
-<div>
-  <h1>Facilities at MOPO</h1>
+
+ <div>  
+    <h1>Facilities at MOPO</h1>
   <div class="row">
       <div class="column2" style="background-color:#aaa;">
           <div class="container">
@@ -226,6 +221,10 @@ Button with tooltip
       <h2>Logo</h2>
       <p>Some text..</p>
     </div>
-  </div>
+  </div> -->
+
+  <router-outlet></router-outlet>
+  
+  
 </body>
 </html>
