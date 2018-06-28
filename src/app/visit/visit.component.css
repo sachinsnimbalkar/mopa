@@ -1,0 +1,14 @@
+.column{
+    background-color: white;
+    color:black;
+    
+    float: left;
+    width: 25%;
+    height: 400px;
+    padding: 10px;
+    /* Should be removed. Only for demonstration */
+}
+h2{
+    color: darkgoldenrod;
+    
+}
