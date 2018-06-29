@@ -5,7 +5,7 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { SliderModule } from 'angular-image-slider';
 import { RouterModule } from '@angular/router';
-
+import { HttpClientModule } from '@angular/common/http';  
 import { routes } from './app.routs';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -17,7 +17,9 @@ import { MemberAreaComponent } from './member-area/member-area.component';
 import { FacilitiesComponent } from './facilities/facilities.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { AboutComponent } from './about/about.component';
-
+import { HttpModule } from '@angular/http';
+//import { SliderModule } from '../app//Model/slider.model';
+//import { EventsModule } from '../app/Model/events.model'
 // const appRoutes: Routes = [
 //   { path: 'About', component: AboutComponent },
 
@@ -32,7 +34,8 @@ import { AboutComponent } from './about/about.component';
     ShopComponent,
     MemberAreaComponent,
     FacilitiesComponent,
-    AboutComponent
+    AboutComponent,
+   
     
   ],
   imports: [
@@ -43,6 +46,8 @@ import { AboutComponent } from './about/about.component';
     ModalModule.forRoot(),
     SliderModule,
     AppRoutingModule,
+    HttpModule,
+    HttpClientModule
     
   ],
   providers: [],
