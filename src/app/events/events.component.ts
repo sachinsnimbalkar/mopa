@@ -19,7 +19,7 @@ export class EventsComponent implements OnInit {
     this.httpService.get('./assets/Birds.json').subscribe(
       data => {
         this.arrBirds = data as string [];	 // FILL THE ARRAY WITH DATA.
-        //  console.log(this.arrBirds[1]);
+          console.log(this.arrBirds[1]);
       },
       (err: HttpErrorResponse) => {
         console.log (err.message);
