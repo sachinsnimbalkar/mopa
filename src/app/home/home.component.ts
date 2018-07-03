@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   arrSlider: string [];
 
   ngOnInit () {
-    this.httpService.get('./data/sliderdata.json').subscribe(
+    this.httpService.get('sliderdata.json').subscribe(
       data => {
         this.arrSlider = data as string [];	 // FILL THE ARRAY WITH DATA.
         //  console.log(this.arrBirds[1]);
