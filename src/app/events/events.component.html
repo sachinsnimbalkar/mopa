@@ -1,31 +1,28 @@
- 
+<div style="text-align:left;width:500px;">
+  <h1>
+      {{ title }}!
+  </h1>
 
- <table border="2" style="widows: 50%;">
-    <thead>
+  <table *ngIf="arrBirds">
+      <!-- ADD HEADERS -->
       <tr>
         <th>srno</th>
         <th>Date</th>
         <th>Event</th>
         <th>City</th>
         <th>Venue</th>
-       
-        
       </tr>
-    </thead>
-    <tbody>
-    <tr *ngFor = "let evnt of event">
-        <td>{{evnt.srno}}</td>
-  <td>{{evnt.Date}}</td> 
-  <td>{{evnt.Event}}</td> 
-  <td>{{evnt.City}}</td> 
-  <td>{{evnt.Venue}}</td>  
+
+      <!-- BIND ARRAY TO TABLE -->
+      <tr *ngFor="let bird of arrBirds">
+        <td>{{bird.srno}}</td>
+        <td>{{bird.Date}}</td> 
+        <td>{{bird.Event}}</td> 
+        <td>{{bird.City}}</td> 
+        <td>{{bird.Venue}}</td>
       </tr>
-      <!-- <tr *ngIf = "event.length==0">
-        <td colspan="5">No data to display</td></tr> -->
-            </tbody>
   </table>
-
-
+</div>
         <!-- <div class="container">
                 <h1>Events</h1>
                           
@@ -105,4 +102,4 @@
       </div> 
 
 
-    
+      
