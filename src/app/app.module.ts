@@ -18,6 +18,7 @@ import { FacilitiesComponent } from './facilities/facilities.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { AboutComponent } from './about/about.component';
 import { HttpModule } from '@angular/http';
+
 //import { SliderModule } from '../app//Model/slider.model';
 //import { EventsModule } from '../app/Model/events.model'
 // const appRoutes: Routes = [

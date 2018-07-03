@@ -2,27 +2,29 @@
 <div class="row">
     <div class="column left" style="background-color:	#f2f2f2; ">  
        
-      <table border="2" style="widows: 50%;">
-        <thead>
-          <tr>
-            <th>srno</th>
-            <th>src</th>
-            <th>alt</th>
-           
-            
-          </tr>
-        </thead>
-        <tbody>
-        <tr *ngFor = "let sldr of slider">
-            <td>{{sldr.srno}}</td>
-      <td>{{sldr.src}}</td> 
-      <td>{{sldr.alt}}</td> 
-     
-          </tr>
-      <!-- <tr *ngIf = "slider.length==0">
-      <td colspan="6">No data to display</td></tr> -->
-        </tbody>
-      </table>
+      <div style="text-align:left;width:500px;">
+        <h1>
+            {{ title }}!
+        </h1>
+      
+        <table *ngIf="arrSlider">
+            <!-- ADD HEADERS -->
+            <tr>
+              <th>srno</th>
+              <th>src</th>
+              <th>alt</th>
+             
+            </tr>
+      
+            <!-- BIND ARRAY TO TABLE -->
+            <tr *ngFor="let sldr of arrSlider">
+              <td>{{sldr.srno}}</td>
+              <td>{{sldr.src}}</td> 
+              <td>{{sldr.alt}}</td> 
+             
+            </tr>
+        </table>
+      </div>
         
 
         <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
